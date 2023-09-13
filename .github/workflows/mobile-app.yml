@@ -34,4 +34,4 @@ jobs:
         with:
           artifacts: "mobile-app/build/app/outputs/flutter-apk/app-release.apk"
           tag: v1.0.${{ github.event.after }}
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
