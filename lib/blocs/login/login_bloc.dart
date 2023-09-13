@@ -100,9 +100,17 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
           status: LoginStatus.failure,
           message: response.message,
         ));
-
-        // Change login status back to initial
-        return emit(state.copyWith(status: LoginStatus.initial));
     }
+
+    // Change login status back to initial
+    return emit(state.copyWith(
+      message: "",
+      phoneCode: "+256",
+      email: const Email(),
+      passwordVisible: false,
+      password: const Password(),
+      phoneNumber: const Phone(),
+      status: LoginStatus.initial,
+    ));
   }
 }

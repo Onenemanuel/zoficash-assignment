@@ -144,7 +144,15 @@ class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
         ));
 
         // Change registration status back to initial
-        return emit(state.copyWith(status: RegisterStatus.initial));
+        return emit(state.copyWith(
+          message: "",
+          phoneCode: "+256",
+          email: const Email(),
+          passwordVisible: false,
+          password: const Password(),
+          phoneNumber: const Phone(),
+          status: RegisterStatus.initial,
+        ));
     }
   }
 }
