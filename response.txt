@@ -1,0 +1,63 @@
+HTTP/1.1 200 OK
+Date: Tue, 12 Sep 2023 10:30:52 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+x-auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOnsiYWNjb3VudF9pZCI6IjQ3YTY0NGFlLWM1MzgtNDk3Ni1iMWZmLWRjNWJkMDJjOWZmNyJ9LCJhY2NvdW50X2lkIjoiNDdhNjQ0YWUtYzUzOC00OTc2LWIxZmYtZGM1YmQwMmM5ZmY3IiwiZXhwIjoxNjk1MTE5NDUyfQ.WfDr8h9sXwDy9Io-FYg34N1hiBmFsUfGe-D0tOC-KDo
+etag: W/"7dc5e984a97f1c51625b47bc16cf2997"
+cache-control: max-age=0, private, must-revalidate
+x-request-id: db60984c-1d6a-4119-896b-b9be63072ba0
+x-runtime: 0.274333
+vary: Origin
+x-do-app-origin: 7408eaa1-9ee1-47fe-ad60-f0c6eb9067df
+x-do-orig-status: 200
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 80577a3d09db4f75-JNB
+Content-Encoding: gzip
+
+{
+  "id": "47a644ae-c538-4976-b1ff-dc5bd02c9ff7",
+  "year": 2023,
+  "month": 9,
+  "month_in_words": "September",
+  "accountname": "@IcuAt98M",
+  "email": null,
+  "country_code": "+256",
+  "phone_number": "+256393193992",
+  "last_login_at": "12 Sep 2023 10:30AM",
+  "logged_in_ips": [
+    "41.210.141.148"
+  ],
+  "is_superuser": false,
+  "is_staff": false,
+  "is_customer": true,
+  "staff_access": null,
+  "customer_access": [
+    "employee"
+  ],
+  "remember_me": false,
+  "is_account_locked": false,
+  "is_account_active": true,
+  "remember_me_expiration": null,
+  "is_account_verified": false,
+  "account_verification_id": "882acd2b-afff-406e-8e37-5b10cc882c9c",
+  "account_verification_otp": "101010",
+  "account_verification_sent_to": [
+    "+256393193992"
+  ],
+  "verification_expiration": "14 Sep 2023 10:30AM",
+  "reset_password_id": null,
+  "send_otp_on_login": true,
+  "send_notifications": true,
+  "is_security_question_setup": false,
+  "security_question_setup_OTP": "570601",
+  "security_question_setup_id": "a3b15660-6f71-4c98-b3ed-4e3af308d029",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOnsiYWNjb3VudF9pZCI6IjQ3YTY0NGFlLWM1MzgtNDk3Ni1iMWZmLWRjNWJkMDJjOWZmNyJ9LCJhY2NvdW50X2lkIjoiNDdhNjQ0YWUtYzUzOC00OTc2LWIxZmYtZGM1YmQwMmM5ZmY3IiwiZXhwIjoxNjk1MTE5NDUyfQ.WfDr8h9sXwDy9Io-FYg34N1hiBmFsUfGe-D0tOC-KDo"
+}

@@ -1,0 +1,52 @@
+# Install REST Client extension on VS Code
+# REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.
+@baseUrl = https://staging-auth-api.zoficash.com/api/v1
+@authToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NGFiZWYzNjZlZmMyMmE1Y2Y5MzQ0MGQiLCJpYXQiOjE2OTIxMjk3MTl9.OPk6thuMwnNn_zfGxYaafAnnimBIxyZq9nefwUUpSfE
+
+### Register
+
+POST {{baseUrl}}/account-registration
+Content-Type: application/json
+
+{
+    "ip": "41.210.141.148",
+    "email": "",
+    "access": "employee",
+    "country_code": "+256",
+    "phone_number": "771234567",
+    "password": "123456",
+    "repeat_password": "123456"
+}
+
+### Verification
+
+PATCH {{baseUrl}}/verify-account-with-otp
+Content-Type: application/json
+
+{
+    "otp": "101010",
+    "country_code": "+256",
+    "phone_number": "771234567"
+}
+
+### Login
+
+POST {{baseUrl}}/account-login
+Content-Type: application/json
+
+{
+    "country_code": "+256",
+    "ip": "41.210.141.148",
+    "phone_number": "771234567",
+    "password": "123456"
+}
+
+### Security Question
+
+POST {{baseUrl}}/setup-security-question/a3b15660-6f71-4c98-b3ed-4e3af308d029
+Content-Type: application/json
+
+{
+    "security_question": "What is your city?",
+    "security_answer": "Kampala"
+}
