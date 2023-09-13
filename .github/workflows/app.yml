@@ -12,9 +12,6 @@ jobs:
   build:
     name: Build & Release
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./
 
     steps:
       - name: Checkout
@@ -35,6 +32,6 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
         with:
-          artifacts: "/build/app/outputs/flutter-apk/app-release.apk"
+          artifacts: "build/app/outputs/flutter-apk/app-release.apk"
           tag: v1.0.${{ github.event.after }}
           token: ${{ secrets.GITHUB_TOKEN }}
